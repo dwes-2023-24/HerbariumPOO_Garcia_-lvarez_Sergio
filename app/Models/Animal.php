@@ -9,7 +9,6 @@ class Animal extends Organism{
 
     public function __construct($name, $discovery_date){
         parent::__construct($name, $discovery_date);
-        self::$num_animals++;
         
     }
 

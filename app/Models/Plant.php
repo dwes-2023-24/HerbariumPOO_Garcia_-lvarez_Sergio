@@ -15,13 +15,6 @@ class Plant extends Organism{
         return "Plant";
     }
 
-  /*   public static function updateNumPlants($amount) {
-        self::$num_plants += $amount;
-        if (self::$num_plants < 0) {
-            self::$num_plants = 0;
-        }
-    } */
-
     public static function updatePopulation($amount) {
         self::$num_plants += $amount;
         parent::$population += $amount;

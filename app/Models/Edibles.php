@@ -1,5 +1,13 @@
 <?php
 
 class Edibles extends Plant{
+
+    public function __construct($name, $discovery_date){
+        parent::__construct($name, $discovery_date);
+    }
+
+    function getCategory(){
+        return "Edibles";
+    }
     
 }
