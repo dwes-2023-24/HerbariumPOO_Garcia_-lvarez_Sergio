@@ -9,11 +9,12 @@ abstract class Organism {
     protected $discovery_date;
     protected static $population=0;
     
-    public function __construct($name = "", $discovery_date = ""){
+    public function __construct($name, $discovery_date){
         $this -> name = $name;
         $this -> discovery_date = $discovery_date;
+        self::$population++;
     } 
-   
+ 
     abstract public function getCategory();    
     
     abstract public static function updatePopulation($amount);

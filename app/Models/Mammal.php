@@ -1,5 +1,9 @@
 <?php
 
+namespace App\Models;
+use App\Interfaces\Canivarora;
+use App\traits\Swimmer;
+
 class Mammal extends Animal implements Canivarora{
 
     use Swimmer;

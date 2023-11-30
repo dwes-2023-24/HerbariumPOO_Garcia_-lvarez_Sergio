@@ -1,5 +1,9 @@
 <?php
 
+namespace App\Models;
+use App\Interfaces\Canivarora;
+use App\traits\Flyer;
+
 class Bird extends Animal implements Canivarora{
 
     use Flyer;

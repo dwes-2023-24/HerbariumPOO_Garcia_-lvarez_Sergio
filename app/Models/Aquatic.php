@@ -1,5 +1,9 @@
 <?php
 
+namespace App\Models;
+use App\Interfaces\Herbivore;
+use App\traits\Swimmer;
+
 class Aquatic extends Plant implements Herbivore{
 
     use Swimmer;

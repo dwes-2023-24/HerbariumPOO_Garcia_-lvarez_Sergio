@@ -1,5 +1,9 @@
 <?php
 
+namespace App\Models;
+use App\Interfaces\Herbivore;
+use App\traits\Climber;
+
 class Arboreal extends Plant implements Herbivore{
 
     use Climber;
