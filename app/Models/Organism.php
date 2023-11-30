@@ -1,5 +1,6 @@
 <?php
-
+//TODO: 1.5 Los hijos harán lo que necesiten según sus padres.
+//Todas las rutas de importacion.
 namespace App\Models;
 
 abstract class Organism {
@@ -14,15 +15,7 @@ abstract class Organism {
     } 
    
     abstract public function getCategory();    
-
-
- /*    public static function updatePopulation($amount) {
-        self::$population += $amount;
-        if (self::$population < 0) {
-            self::$population = 0;
-        }
-    }
- */
+    
     abstract public static function updatePopulation($amount);
 
 }
